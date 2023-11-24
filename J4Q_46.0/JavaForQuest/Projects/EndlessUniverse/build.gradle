@@ -17,9 +17,9 @@ android {
     // be unique on a system.  If you don't change it, a new app
     // will replace an older one.
     applicationId "com.example.j4q." + project.archivesBaseName
-    minSdkVersion 24
-    targetSdkVersion 25
-    compileSdkVersion 26
+    minSdkVersion 28
+    targetSdkVersion 28
+    compileSdkVersion 28
 
     // override app plugin abiFilters for 64-bit support
     externalNativeBuild {
