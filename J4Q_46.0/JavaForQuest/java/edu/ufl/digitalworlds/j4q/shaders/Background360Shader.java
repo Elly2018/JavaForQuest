@@ -2,6 +2,7 @@ package edu.ufl.digitalworlds.j4q.shaders;
 
 
 import android.opengl.GLES30;
+import android.opengl.GLES31;
 
 import edu.ufl.digitalworlds.j4q.models.Mesh;
 
@@ -9,7 +10,7 @@ public class Background360Shader extends Shader {
 
     public Background360Shader() {
         super(
-                "#version 300 es\n"+
+                "#version 310 es\n"+
                         "uniform SceneMatrices\n"+
                         "{\n"+
                         "	uniform mat4 ViewMatrix;\n"+
@@ -38,7 +39,7 @@ public class Background360Shader extends Shader {
                         "}\n",
 
 
-                "#version 300 es\n"+
+                "#version 310 es\n"+
                         "precision mediump float;\n" +
                         "in lowp vec2 vUV;\n"+
                         "out lowp vec4 outColor;\n"+

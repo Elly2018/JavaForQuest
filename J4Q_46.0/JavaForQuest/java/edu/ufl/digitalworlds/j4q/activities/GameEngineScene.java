@@ -111,6 +111,7 @@ public class GameEngineScene {
 
     public void start(){
         GLES30.glEnable( GLES30.GL_SCISSOR_TEST );
+        GLES30.glEnable( GLES30.GL_MAX_SAMPLES);
         GLES30.glDepthMask( true );
         GLES30.glEnable( GLES30.GL_DEPTH_TEST );
         GLES30.glDepthFunc( GLES30.GL_LEQUAL );

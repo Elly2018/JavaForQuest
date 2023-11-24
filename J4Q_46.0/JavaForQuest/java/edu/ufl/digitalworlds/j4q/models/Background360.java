@@ -9,7 +9,7 @@ public class Background360 extends Model {
 
     public Background360(){
         ObjectMaker om=new ObjectMaker();
-        om.sphere(-100,100,100,32);
+        om.sphere(-20,20,20,64);
         om.flushTexturedModel(this);
         shader=new Background360Shader();
     }

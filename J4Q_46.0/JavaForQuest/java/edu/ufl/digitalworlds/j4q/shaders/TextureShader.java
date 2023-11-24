@@ -57,8 +57,7 @@ public class TextureShader extends Shader {
     @Override
     public void render(Mesh mesh) {
         GLES30.glUseProgram(shaderProgram);
-        GLES30.glBindVertexArray( mesh.vertexArrayObject ) ;
-
+        GLES30.glBindVertexArray( mesh.vertexArrayObject );
 
         if(texture!=null) {
             //shader.setUniformInteger("uTexture", texture.slot);
